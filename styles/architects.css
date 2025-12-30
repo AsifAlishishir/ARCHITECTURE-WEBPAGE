@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* UNIVERSAL STYLES */
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER AND NAVBAR STYLES */
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.navbar h2 {
+  font-size: 2.8em;
+  font-weight: 700;
+  color: rgba(19, 19, 19, 1);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgba(114, 114, 114, 1);
+}
+
+/* FOR MOBILE DEVICES */
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    padding: 30px 15px 0px 15px;
+  }
+
+  .navbar h2 {
+    font-size: 2.3em;
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    gap: 22px;
+    font-size: 16px;
+  }
+}
