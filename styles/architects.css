@@ -8,6 +8,16 @@
   box-sizing: border-box;
 }
 
+/* SHARED STYLES */
+.btn-primary {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 144, 14, 1);
+  border: none;
+  border-radius: 8px;
+  padding: 20px 25px;
+  font-size: 1.25em;
+  font-weight: 600;
+}
 /* HEADER AND NAVBAR STYLES */
 header {
   background-color: rgba(255, 144, 14, 0.1);
@@ -42,8 +52,35 @@ header {
   color: rgba(114, 114, 114, 1);
 }
 
+/* BANNER STYLES */
+.banner {
+  padding-top: 120px;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 45px;
+}
+.banner-content h2 {
+  font-size: 4em;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 25px;
+}
+
+.banner-content p {
+  color: rgba(114, 114, 114, 1);
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+
+.banner-image img {
+  width: 100%;
+  margin-top: 40px;
+}
+
 /* FOR MOBILE DEVICES */
 @media screen and (max-width: 576px) {
+  /* NAVBAR STYLES */
   .navbar {
     flex-direction: column;
     padding: 30px 15px 0px 15px;
@@ -57,5 +94,39 @@ header {
   .nav-links {
     gap: 22px;
     font-size: 16px;
+  }
+
+  /* BANNER STYLES */
+  .banner {
+    margin: 0 auto;
+    padding-top: 70px;
+    margin: 0 15px;
+  }
+
+  .banner-content h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  .banner-content h2 br {
+    display: none;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .banner-content p br {
+    display: none;
+  }
+
+  .btn-primary {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .banner-image img {
+    border-radius: 12px;
   }
 }
