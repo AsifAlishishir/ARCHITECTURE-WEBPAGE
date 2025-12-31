@@ -19,7 +19,7 @@
   font-weight: 600;
 }
 
-main{
+main {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -93,39 +93,82 @@ header {
   margin-bottom: 130px;
 }
 
-.quick-list-images{
+.quick-list-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-left: 50px;
 }
-.quick-list-content h2{
+.quick-list-content h2 {
   font-size: 45px;
   font-weight: 500;
   color: rgba(114, 114, 114, 1);
   margin-bottom: 24px;
 }
 
-.text-black{
+.text-black {
   font-weight: 700;
   color: rgba(19, 19, 19, 1);
 }
 
-.text-orange{
+.text-orange {
   font-weight: 700;
   color: rgba(255, 144, 14, 1);
 }
 
-.quick-list-content p{
+.quick-list-content p {
   font-size: 16px;
   color: rgba(114, 114, 114, 1);
   margin-bottom: 32px;
   line-height: 27px;
 }
 
-.quick-list-images img{
-    width: 100%;
-  }
+.quick-list-images img {
+  width: 100%;
+}
+
+/* FACT SECTION STYLES */
+.facts-card-container {
+  margin-bottom: 180px;
+}
+
+.facts h2 {
+  font-size: 45px;
+  font-weight: 700;
+  color: rgba(19, 19, 19, 1);
+  margin-bottom: 24px;
+}
+
+.facts > p {
+  color: rgba(114, 114, 114, 1);
+  margin-bottom: 100px;
+}
+
+.facts-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 120px;
+}
+
+.fact-card {
+  border: 1px solid rgba(255, 144, 14, 1);
+  border-radius: 8px;
+  padding: 45px 35px 60px 35px;
+  text-align: center;
+}
+
+.fact-card h4 {
+  font-size: 45px;
+  font-weight: 600;
+  color: rgba(66, 66, 66, 1);
+  margin: 8px 0;
+}
+
+.fact-card p {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(114, 114, 114, 1);
+}
 
 /* FOR MOBILE DEVICES */
 @media screen and (max-width: 576px) {
@@ -186,23 +229,45 @@ header {
     margin-bottom: 70px;
   }
 
-  .quick-list-images{
+  .quick-list-images {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 0;
   }
 
-  .quick-list-content h2{
+  .quick-list-content h2 {
     font-size: 28px;
   }
 
-  .quick-list-content p{
+  .quick-list-content p {
     font-size: 15px;
   }
 
-  .quick-list-content p br{
+  .quick-list-content p br {
     display: none;
-    
   }
 
-  
+  /* FACT SECTION STYLES */
+  .facts-card-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+
+  .facts {
+    margin: 0 10px;
+  }
+
+  .facts h2 {
+    font-size: 24px;
+  }
+
+  .facts > p {
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .facts p br {
+    display: none;
+  }
 }
