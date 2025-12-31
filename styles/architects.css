@@ -128,7 +128,7 @@ header {
 }
 
 /* FACT SECTION STYLES */
-.facts-card-container {
+.facts {
   margin-bottom: 180px;
 }
 
@@ -147,6 +147,7 @@ header {
 .facts-card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin: 0 50px;
   gap: 120px;
 }
 
@@ -249,12 +250,19 @@ header {
   /* FACT SECTION STYLES */
   .facts-card-container {
     grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    margin-bottom: 70px;
+    margin: 0;
+    gap: 24px;
+    width: 100%;
   }
 
   .facts {
     margin: 0 10px;
+    margin-bottom: 90px;
+  }
+
+  .fact-card {
+    width: 100%;
+    padding: 30px 20px; /* Slightly reduced padding for smaller screens */
   }
 
   .facts h2 {
