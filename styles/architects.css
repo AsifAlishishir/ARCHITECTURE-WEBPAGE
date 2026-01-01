@@ -127,6 +127,73 @@ header {
   width: 100%;
 }
 
+/* FEATURES SECTION STYLES */
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+}
+
+.features-content {
+  width: 100%;
+}
+.features-content h2 {
+  border-left: 5px solid rgba(255, 144, 14, 1);
+  padding-left: 25px;
+  font-size: 45px;
+  font-weight: 700;
+  color: rgba(19, 19, 19, 1);
+  margin-bottom: 24px;
+}
+
+.features-content > p {
+  color: rgba(114, 114, 114, 1);
+  margin-bottom: 30px;
+}
+
+.features-card {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.features-card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: rgba(19, 19, 19, 1);
+}
+
+.features-card p {
+  color: rgba(114, 114, 114, 1);
+}
+
+.features-image {
+  width: 100%;
+}
+
+.features-image img {
+  width: 100%;
+}
+
+#btn-badge {
+  /* padding: 30px 45px; */
+  margin-left: -90px;
+  margin-top: -90px;
+}
+
+#btn-badge .batch-year {
+  font-size: 65px;
+  font-weight: 700;
+}
+
+#btn-badge .batch-experience {
+  font-size: 25px;
+  font-weight: 500;
+}
 /* FACT SECTION STYLES */
 .facts {
   margin-bottom: 180px;
@@ -285,6 +352,30 @@ footer p {
   }
 
   .quick-list-content p br {
+    display: none;
+  }
+
+  /* FEATURES SECTION STYLES */
+  .features {
+    flex-direction: column;
+    margin: 0 10px;
+    gap: 50px;
+    margin-bottom: 70px;
+  }
+
+  .features-content h2 {
+    font-size: 26px;
+  }
+
+  #btn-badge {
+    display: none;
+  }
+
+  .features-content h2 br {
+    display: none;
+  }
+
+  .features-content p br {
     display: none;
   }
 
