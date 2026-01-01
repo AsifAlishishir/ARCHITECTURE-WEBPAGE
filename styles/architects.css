@@ -171,6 +171,32 @@ header {
   color: rgba(114, 114, 114, 1);
 }
 
+/* SPONSORS SECTION STYLE */
+.sponsors{
+  text-align: center;
+  margin-bottom: 130px;
+}
+.sponsors h2{
+  font-size: 45px;
+  font-weight: 700;
+  color: rgba(19, 19, 19, 1);
+  margin-bottom: 24px;
+}
+
+.sponsors p{
+  color: rgba(114, 114, 114, 1);
+  margin-bottom: 50px;
+  line-height: 28px;
+}
+
+.sponsors-image{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    filter: grayscale(100%);
+    gap: 24px;
+}
+
 /* FOR MOBILE DEVICES */
 @media screen and (max-width: 576px) {
   /* NAVBAR STYLES */
@@ -278,4 +304,26 @@ header {
   .facts p br {
     display: none;
   }
+
+
+  /* SPONSORS STYLES */
+  .sponsors
+  {
+    margin: 0 10px;
+    margin-bottom: 70px;
+  }
+  .sponsors h2{
+    font-size: 28px;
+  }
+
+  .sponsors p{
+    font-size: 14px;
+  }
+  .sponsors p br{
+    display: none;
+  }
+  .sponsors-image{
+  flex-direction: column;
+  gap: 44px;
+}
 }
